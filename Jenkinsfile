@@ -9,14 +9,4 @@ pipeline {
                 }
             }
         }
-
-
-    post {
-        success {
-            echo 'Python script ran successfully!'
-        }
-        failure {
-            echo 'Python script failed!'
-        }
-    }
 }
