@@ -1,12 +1,11 @@
 pipeline {
     agent any
 
-        stage('Run Python Script') {
+    stages {
+        stage('Hello') {
             steps {
-                script {
-                    // Run your Python script
-                    bat 'C:\\Users\\dor.h\\AppData\\Local\\Programs\\Python\\Python312\\python.exe HelloWord.py'
-                }
+                bat 'C:\\Users\\dor.h\\AppData\\Local\\Programs\\Python\\Python312\\python.exe HelloWord.py'
             }
         }
+    }
 }
